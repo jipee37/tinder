@@ -1,4 +1,61 @@
-h1 {
-	font-family: 'Montserrat', sans serif;
+// Fonts
+$primaryFont: "proxima-nova-soft";
+
+// Colors
+$white: #fff;
+$black: #000;
+$gray: #565151;
+$pink: #ff7c7c;
+
+//Helpers
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
 }
 
+.clearfix:after {
+  clear: both;
+}
+
+.wrapper {
+  width: 760px;
+  max-width: 60%; //si taille écran<760px => prends au max 60% de la largeur dispo.
+  margin: 0 auto;
+}
+
+//Global Styles
+
+* {
+	box-sizing: border-box
+}
+
+html, body {
+	width: 100%; //pour occuper totalité écran.
+	height: 100%;
+}
+
+
+.banner {
+  position: relative;
+  width: 100%; //cf élément parent 
+  height: 100%;
+  overflow: hidden; //delete scrollbar restant
+ 
+
+	#video_background {
+    	position: absolute;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	top: 0; 
+    	min-width: 100%; //supprime "blanc restant à droite écran"
+    	min-height: 100%;
+    	width: auto;
+    	height: auto;
+    	z-index: -150;  
+   }
+
+   .top_header {
+   		float: right;
+   }
+}
