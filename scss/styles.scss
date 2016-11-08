@@ -4,8 +4,25 @@ $primaryFont: "proxima-nova-soft";
 // Colors
 $white: #fff;
 $black: #000;
-$gray: #565151;
+$grey: #565151;
 $pink: #ff7c7c;
+
+//Mixins
+
+@mixin rounded_button($padding, $radius, $border) {
+	display: inline-block; //stylisation élément type bouton.
+	color: $white;
+	text-decoration: none;
+	border: $border;
+	padding: $padding;
+	border-radius: $radius;
+	transition: all 0.3s ease-in-out;	
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.4); 
+	}
+}
+
 
 //Helpers
 .clearfix:before, .clearfix:after {
@@ -36,14 +53,14 @@ html, body {
 
 
 .banner {
-  position: relative;
+  position: relative; //élément parent
   width: 100%; //cf élément parent 
   height: 100%;
   overflow: hidden; //delete scrollbar restant
  
 
 	#video_background {
-    	position: absolute;
+    	position: absolute; //se situer/banner
     	left: 0;
     	right: 0;
     	bottom: 0;
@@ -58,4 +75,69 @@ html, body {
    .top_header {
    		float: right;
    }
+
+		nav > a {
+			float: left;
+			margin-top: 1.3em;
+			@include rounded_button(8px, 8px, 2px solid $white)
+		}
+
+
+		ul {
+			float: right;
+			list-style: none;
+			padding: 0;
+			margin: 1.3em 1.5em 0 0.6em; //replacer le bloc/ celui de gauche.
+
+				img {
+					display: inline-block; //modifie propriétés liées à l'image.
+					width: 18px;
+					max-width: 100%; //n'excedera pas le bloc parent ul.
+					float: left;
+					margin: 0 0.3em 0 0;	
+				}
+
+			li:not(.active) {
+				display: none;
+				margin: 0;
+				padding: 0;
+				text-align: right;
+
+	        	a {
+	          		text-decoration: none;
+	          		color: $white;
+	          		text-transform: uppercase;
+	          		font-size: 0.7em;
+
+	          		&:hover {
+	            		color: $grey;
+	          		}
+				}
+			}	
+			
+			li.active a {
+				@include rounded_button(8px, 8px, 2px solid $white)
+			}
+		}
+
+	.jumbotron {
+		position: absolute;
+		top: 18%;
+	    left: 0; 
+	    right: 0;
+	    color: $white;
+	    text-align: center;
+	
+		h1 {
+			
+			img {
+				display: inline-block;
+				width: 550px;
+				min-width: 23%; //si taille écran < 550px
+				max-width: 80%; //dimensions / celles dispos 
+				max-height: 40%; //dans le bloc
+				margin-top: 0.3em; 
+			}
+		}		
+	}
 }
