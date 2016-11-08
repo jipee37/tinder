@@ -89,6 +89,11 @@ html, body {
     right: 0;
     color: #fff;
     text-align: center; }
+    .banner .jumbotron h1, .banner .jumbotron p {
+      font-size: 2.5em;
+      font-weight: 500; }
+    .banner .jumbotron p {
+      margin-top: -0.4em; }
     .banner .jumbotron h1 img {
       display: inline-block;
       width: 550px;
@@ -96,5 +101,21 @@ html, body {
       max-width: 80%;
       max-height: 40%;
       margin-top: 0.3em; }
+    .banner .jumbotron .download_mobile_apps_buttons {
+      width: 100%;
+      text-align: center; }
+      .banner .jumbotron .download_mobile_apps_buttons img {
+        width: 165px; }
+        .banner .jumbotron .download_mobile_apps_buttons img:first-child {
+          margin-right: 0.5em; }
+        .banner .jumbotron .download_mobile_apps_buttons img:last-child {
+          margin-left: 0.5em; }
+  .banner .arrow_down {
+    position: absolute;
+    bottom: 1.5em;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2em; }
 
 /*# sourceMappingURL=styles.css.map */

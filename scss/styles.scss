@@ -56,7 +56,7 @@ html, body {
   position: relative; //élément parent
   width: 100%; //cf élément parent 
   height: 100%;
-  overflow: hidden; //delete scrollbar restant
+  overflow: hidden; //delete scrollbar restant bas écran
  
 
 	#video_background {
@@ -128,6 +128,15 @@ html, body {
 	    color: $white;
 	    text-align: center;
 	
+		h1,p {
+			font-size: 2.5em;
+      		font-weight: 500;
+		}
+
+		p {
+			margin-top: -0.4em;
+		}
+
 		h1 {
 			
 			img {
@@ -139,5 +148,36 @@ html, body {
 				margin-top: 0.3em; 
 			}
 		}		
+	
+		.download_mobile_apps_buttons {
+			width: 100%;
+			text-align: center;
+			
+			img {
+				width: 165px;
+
+				&:first-child {
+					margin-right: 0.5em;
+				}
+
+				&:last-child {
+					margin-left: 0.5em;
+				}
+			}
+		}
+
 	}
+
+	.arrow_down {
+		position: absolute;
+		bottom: 1.5em;
+		width: 100%;
+		text-align: center; //s'utilise avec width !
+		color: $white;
+		font-size: 2em;
+
+	}
+
+
+
 }
