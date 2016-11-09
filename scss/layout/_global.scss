@@ -1,0 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: $primaryFont, Helvetica, Arial, sans-serif;
+	width: 100%; //pour occuper totalité écran.
+	height: 100%;
+}

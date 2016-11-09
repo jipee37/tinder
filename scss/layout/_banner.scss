@@ -1,0 +1,130 @@
+.banner {
+  position: relative; //élément parent
+  width: 100%; //cf élément parent 
+  height: 100%;
+  overflow: hidden; //delete scrollbar restant bas écran
+ 
+
+	#video_background {
+    	position: absolute; //se situer/banner
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	top: 0; 
+    	min-width: 100%; //supprime "blanc restant à droite écran"
+    	min-height: 100%;
+    	width: auto;
+    	height: auto;
+    	z-index: -150;  
+   }
+
+   .top_header {
+   		float: right;
+   }
+
+		nav > a {
+			float: left;
+			margin-top: 1.3em;
+			@include rounded_button(8px, 8px, 2px solid $white)
+		}
+
+
+		ul {
+			float: right;
+			list-style: none;
+			padding: 0;
+			margin: 1.3em 1.5em 0 0.6em; //replacer le bloc/ celui de gauche.
+
+				img {
+					display: inline-block; //modifie propriétés liées à l'image.
+					width: 18px;
+					max-width: 100%; //n'excedera pas le bloc parent ul.
+					float: left;
+					margin: 0 0.3em 0 0;	
+				}
+
+			li:not(.active) {
+				display: none;
+				margin: 0;
+				padding: 0;
+				text-align: right;
+
+	        	a {
+	          		text-decoration: none;
+	          		color: $white;
+	          		text-transform: uppercase;
+	          		font-size: 0.7em;
+
+	          		&:hover {
+	            		color: $grey;
+	          		}
+				}
+			}	
+			
+			li.active a {
+				@include rounded_button(8px, 8px, 2px solid $white)
+			}
+		}
+
+	.jumbotron {
+		position: absolute;
+		top: 18%;
+	    left: 0; 
+	    right: 0;
+	    color: $white;
+	    text-align: center;
+	
+		h1,p {
+			font-size: 2.5em;
+      		font-weight: 500;
+		}
+
+		p {
+			margin-top: -0.4em;
+		}
+
+		h1 {
+			
+			img {
+				display: inline-block;
+				width: 550px;
+				min-width: 23%; //si taille écran < 550px
+				max-width: 80%; //dimensions / celles dispos 
+				max-height: 40%; //dans le bloc
+				margin-top: 0.3em; 
+			}
+		}		
+	
+		.download_mobile_apps_buttons {
+		
+			width: 100%;
+			text-align: center;
+			
+			.button {
+				text-decoration: none;
+
+				img {
+					width: 165px;
+
+					&:first-child {
+						margin-right: 0.5em;
+					}
+
+					&:last-child {
+						margin-left: 0.5em;
+					}
+				}
+			}	
+		}
+
+	}
+
+	.arrow_down {
+		position: absolute;
+		bottom: 1.5em;
+		width: 100%;
+		text-align: center; //s'utilise avec width !
+		color: $white;
+		font-size: 2em;
+	}
+}

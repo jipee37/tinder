@@ -1,0 +1,14 @@
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.wrapper {
+  width: 760px;
+  max-width: 60%; //si taille écran<760px => prends au max 60% de la largeur dispo.
+  margin: 0 auto;
+}

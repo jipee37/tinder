@@ -1,0 +1,13 @@
+@mixin rounded_button($padding, $radius, $border) {
+	display: inline-block; //stylisation élément type bouton.
+	color: $white;
+	text-decoration: none;
+	border: $border;
+	padding: $padding;
+	border-radius: $radius;
+	transition: all 0.3s ease-in-out;	
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.4); 
+	}
+}
