@@ -104,12 +104,14 @@ html, body {
     .banner .jumbotron .download_mobile_apps_buttons {
       width: 100%;
       text-align: center; }
-      .banner .jumbotron .download_mobile_apps_buttons img {
-        width: 165px; }
-        .banner .jumbotron .download_mobile_apps_buttons img:first-child {
-          margin-right: 0.5em; }
-        .banner .jumbotron .download_mobile_apps_buttons img:last-child {
-          margin-left: 0.5em; }
+      .banner .jumbotron .download_mobile_apps_buttons .button {
+        text-decoration: none; }
+        .banner .jumbotron .download_mobile_apps_buttons .button img {
+          width: 165px; }
+          .banner .jumbotron .download_mobile_apps_buttons .button img:first-child {
+            margin-right: 0.5em; }
+          .banner .jumbotron .download_mobile_apps_buttons .button img:last-child {
+            margin-left: 0.5em; }
   .banner .arrow_down {
     position: absolute;
     bottom: 1.5em;
@@ -117,5 +119,27 @@ html, body {
     text-align: center;
     color: #fff;
     font-size: 2em; }
+
+footer {
+  padding: 1.5em 0; }
+  footer .footer_column {
+    float: left;
+    width: 20%;
+    text-align: center; }
+    footer .footer_column h3 {
+      font-size: .85em;
+      text-transform: uppercase;
+      color: #ff7c7c; }
+    footer .footer_column ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      footer .footer_column ul li a {
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 0.6em;
+        color: #565151; }
+        footer .footer_column ul li a:hover {
+          color: #ff7c7c; }
 
 /*# sourceMappingURL=styles.css.map */

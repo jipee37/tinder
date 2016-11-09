@@ -150,20 +150,25 @@ html, body {
 		}		
 	
 		.download_mobile_apps_buttons {
+		
 			width: 100%;
 			text-align: center;
 			
-			img {
-				width: 165px;
+			.button {
+				text-decoration: none;
 
-				&:first-child {
-					margin-right: 0.5em;
-				}
+				img {
+					width: 165px;
 
-				&:last-child {
-					margin-left: 0.5em;
+					&:first-child {
+						margin-right: 0.5em;
+					}
+
+					&:last-child {
+						margin-left: 0.5em;
+					}
 				}
-			}
+			}	
 		}
 
 	}
@@ -175,9 +180,41 @@ html, body {
 		text-align: center; //s'utilise avec width !
 		color: $white;
 		font-size: 2em;
-
 	}
+}
 
+//Footer
 
+footer {
+	padding:1.5em 0;
 
+	.footer_column {
+		float: left;
+		width: 20%;
+		text-align: center;
+	
+		h3 {
+			font-size: .85em;
+			text-transform :uppercase;
+			color: $pink;
+
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li a {
+				text-decoration: none;
+				display: inline-block;
+				margin-bottom: 0.6em;
+				color: $grey;
+			
+				&:hover {
+					color: $pink;
+				}
+			}
+		}
+	}
 }
