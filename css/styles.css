@@ -13,6 +13,30 @@
 @media screen and (max-width: 768px) {
   .wrapper {
     max-width: 90%; } }
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40%, 43% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  75% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); } }
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40%, 43% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  75% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); } }
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite; }
+
 * {
   box-sizing: border-box; }
 

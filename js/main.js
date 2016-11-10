@@ -19,6 +19,8 @@ $(document).ready(function() {
    $('.arrow_down').on('click', function(e) {
     e.preventDefault();
 
+    $(this).removeClass('bounce');
+
     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
     	
   });
