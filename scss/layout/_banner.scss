@@ -36,7 +36,7 @@
 
    .top_header {
    		float: right;
-   }
+   
 
 		nav > a {
 			float: left;
@@ -81,7 +81,8 @@
 				@include rounded_button(8px, 8px, 2px solid $white)
 			}
 		}
-
+	}
+	
 	.jumbotron {
 		position: absolute;
 		top: 18%;

@@ -1,4 +1,6 @@
 @media screen and (max-width: 768px) {
+  .banner .top_header nav > a, .banner .top_header ul {
+    margin-top: 0.4em; }
   .banner .jumbotron {
     top: 32%; }
     .banner .jumbotron h1 {
@@ -8,6 +10,15 @@
     .banner .jumbotron p {
       font-size: 1.5em; }
     .banner .jumbotron .download_mobile_apps_buttons {
-      margin-top: 2.5em; } }
+      margin-top: 2.5em; }
+  .banner .arrow_down {
+    bottom: 0.3em; }
+
+  .footer .footer_column {
+    width: 100%;
+    margin-top: 0.8em; } }
+@media screen and (min-width: 1400px) {
+  .banner .intro {
+    top: 32%; } }
 
 /*# sourceMappingURL=responsive.css.map */

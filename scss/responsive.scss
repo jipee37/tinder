@@ -2,7 +2,14 @@
 
 @media screen and (max-width: 768px) {
 
-	.banner{
+	.banner {
+
+		.top_header {
+
+			nav > a, ul {
+				margin-top: 0.4em;		
+			}
+		}
 
 		.jumbotron {
 			top: 32%;		
@@ -26,5 +33,26 @@
 			}
 
 		}
+	
+		.arrow_down {
+			bottom: 0.3em;
+		}
 	}
+
+	.footer .footer_column {
+		width: 100%;
+		margin-top: 0.8em;
+	}
+
+
+}
+
+//large screen
+
+@media screen and (min-width: 1400px) {
+	
+	.banner .intro {
+		top: 32%;
+	}
+
 }
