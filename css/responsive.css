@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  .banner .jumbotron {
+    top: 32%; }
+    .banner .jumbotron h1 {
+      font-size: 1.6em; }
+      .banner .jumbotron h1 img {
+        width: 300px; }
+    .banner .jumbotron p {
+      font-size: 1.5em; }
+    .banner .jumbotron .download_mobile_apps_buttons {
+      margin-top: 2.5em; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -7,7 +7,7 @@
 
 
 <!-- VIEWPORT [TRES IMPORTANT POUR LE RESPONSIVE DESIGN] -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width:device-width, initial-scale=1.0">
 
 <!-- Normalize CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
@@ -20,14 +20,15 @@
 
 <!-- Stylesheets -->
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
 <!-- Google Fonts -->
+
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 <body>
 
 <!-- Banner -->
 <section class="banner clearfix">
-	
+	<div class="overlay"></div>
 	<video id="video_background" autoplay muted>
 	<source src="tinder.mp4" type="video/mp4"></source>
 	</video>
@@ -142,20 +143,13 @@
 	</div>
 </footer>
 
-<script>
-$(document).ready(function() {
-	alert('Hello World !');
-});
-</script>
-
-
 <!-- JQuery-->
 <script src="https://code.jquery.com/jquery.min.js"></script>
 
 <!-- Lity -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.1.1/lity.min.js"></script>
 
-<!-- scripts-->
+<!-- Scripts-->
 <script src="js/main.js"></script>
 </body>
 </html>

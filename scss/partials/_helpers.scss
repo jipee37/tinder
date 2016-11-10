@@ -7,8 +7,17 @@
   clear: both;
 }
 
+
 .wrapper {
   width: 760px;
-  max-width: 60%; //si taille écran<760px => prends au max 60% de la largeur dispo.
-  margin: 0 auto;
+  max-width: 60%; //on contraint la largeur disponible (quelque soit largeur doc !)
+  margin: 0 auto; //répartit les 40%, soit 20% de chaque côté.
+}				  // => comprime les élements inclus (cf responsive ci-dessous).
+
+
+//Mobile & Tablets
+@media screen and (max-width: 768px) {
+	.wrapper {
+		max-width: 90%; //=> augmentation éléments dans ce mode écran.
+	}
 }

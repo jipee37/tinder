@@ -10,6 +10,9 @@
   max-width: 60%;
   margin: 0 auto; }
 
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 90%; } }
 * {
   box-sizing: border-box; }
 
@@ -23,7 +26,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden; }
-  .banner #video_background {
+  .banner .overlay, .banner #video_background {
     position: absolute;
     left: 0;
     right: 0;
@@ -32,7 +35,17 @@ html, body {
     min-width: 100%;
     min-height: 100%;
     width: auto;
-    height: auto;
+    height: auto; }
+  .banner .overlay {
+    background: url(../images/initial_banner_bg.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+    will-change: opacity;
+    -webkit-transition: opacity 3s ease-out;
+            transition: opacity 3s ease-out;
+    z-index: -100; }
+  .banner #video_background {
     z-index: -150; }
   .banner .top_header {
     float: right; }

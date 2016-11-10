@@ -5,7 +5,7 @@
   overflow: hidden; //delete scrollbar restant bas écran
  
 
-	#video_background {
+	.overlay, #video_background {
     	position: absolute; //se situer/banner
     	left: 0;
     	right: 0;
@@ -15,8 +15,24 @@
     	min-height: 100%;
     	width: auto;
     	height: auto;
-    	z-index: -150;  
+    	  
    }
+	
+	.overlay {
+		background: url(../images/initial_banner_bg.jpg) center center no-repeat ;
+		background-size: cover;
+		filter: blur(15px);
+		will-change: opacity;
+		transition: opacity 3s ease-out;
+		z-index: -100;
+	}
+
+
+	#video_background {
+		z-index: -150;
+	}
+
+
 
    .top_header {
    		float: right;
