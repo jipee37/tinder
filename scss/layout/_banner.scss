@@ -41,6 +41,7 @@
 		nav > a {
 			float: left;
 			margin-top: 1.3em;
+		
 			@include rounded_button(8px, 8px, 2px solid $white)
 		}
 
@@ -82,7 +83,7 @@
 			}
 		}
 	}
-	
+
 	.jumbotron {
 		position: absolute;
 		top: 18%;
